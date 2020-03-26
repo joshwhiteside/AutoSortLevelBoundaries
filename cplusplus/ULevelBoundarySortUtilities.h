@@ -23,5 +23,5 @@ class PROJECTNAME_API ULevelBoundarySortUtilities : public UBlueprintFunctionLib
 public:
 	//Gets a 'level streaming' from a level streaming name.
 	UFUNCTION(BlueprintCallable)
-	static ULevelStreaming* GetLevelStreamingFromName(FName LevelName, AActor contextActor);	
+	static ULevelStreaming* GetLevelStreamingFromName(FName LevelName, AActor* contextActor);	
 };

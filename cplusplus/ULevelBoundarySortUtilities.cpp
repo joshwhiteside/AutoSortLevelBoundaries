@@ -2,8 +2,8 @@
 
 #include "ULevelBoundarySortUtilities.h"
 
-ULevelStreaming* ULevelBoundarySortUtilities::GetLevelStreamingFromName(FName LevelName, AActor contextActor) {
-	UWorld* currentWorld = contextActor.GetWorld();
+ULevelStreaming* ULevelBoundarySortUtilities::GetLevelStreamingFromName(FName LevelName, AActor* contextActor) {
+	UWorld* currentWorld = contextActor->GetWorld();
 
 	TArray<ULevelStreaming*> levels = currentWorld->GetStreamingLevels();
 
